@@ -91,23 +91,23 @@ function Card({ photo, label, ingredients, positiveEffects, negativeEffects }) {
         <img className="w-full h-64 px-4" src={photo} alt={label} />
       </div>
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2 text-center">{label}</div>
-        <div className="font-bold text-lg mb-2">Ingredients:</div>
+        <div className="poppins-bold text-xl mb-2 text-center">{label}</div>
+        <div className="poppins-bold text-lg mb-2">Ingredients:</div>
         <p className="text-base mb-4">{ingredients}</p>
-        <div className="font-bold text-lg mb-2">Dampak Positif:</div>
+        <div className="poppins-bold text-lg mb-2">Dampak Positif:</div>
         <p className="text-base mb-4">{positiveEffects}</p>
-        <div className="font-bold text-lg mb-2">Dampak Negatif:</div>
+        <div className="poppins-bold text-lg mb-2">Dampak Negatif:</div>
         <p className="text-base mb-4">{negativeEffects}</p>
       </div>
     </div>
   );
 }
-
+// waduh waduh
 export default function DataDisplay() {
   return (
-    <section className="py-12 bg-[#FE765E]">
+    <section className="py-12 bg-[#FE765E]" id="data">
       <div className="container mx-auto px-4 mt-[175px]">
-        <h2 className="text-3xl font-bold text-center text-[#1E174C] mb-6">
+        <h2 className="text-[40px] poppins-extrabold text-center text-[#1E174C] mb-6">
           Data Training & Data Testing
         </h2>
         <div className="flex flex-wrap justify-center mx-[80px]">

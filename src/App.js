@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import AboutUs from "./components/AboutUs";
 import ImageProcessing from "./components/ImageProcessing";
 import DataDisplay from "./components/Card";
+import TeamMember from "./components/Team";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AboutUs />
       <DataDisplay />
       <ImageProcessing />
+      <TeamMember />
     </div>
   );
 }

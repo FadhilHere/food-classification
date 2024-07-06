@@ -2,6 +2,13 @@ import React from "react";
 import foodImage from "../assets/images/food-image.png";
 
 export default function HeroSection() {
+  function handleScrollToSection(event, sectionId) {
+    event.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   function KomponenHeroSection() {
     return (
       <section className="bg-[#FFF5EC] py-12 mt-[50px]" id="beranda">
@@ -24,7 +31,10 @@ export default function HeroSection() {
           Hidangan cepat saji lezat, burger, fried chicken, pizza, dan lainnya.
           Disajikan dengan cepat dan praktis, siap dinikmati.
         </p>
-        <button className="bg-[#FE765E] text-white py-3 px-6 rounded hover:bg-orange-600">
+        <button
+          className="bg-[#FE765E] text-white py-3 px-6 rounded hover:bg-orange-600"
+          onClick={(e) => handleScrollToSection(e, "data")}
+        >
           Jenis Fast Food
         </button>
       </div>

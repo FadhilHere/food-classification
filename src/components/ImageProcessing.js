@@ -101,7 +101,7 @@ export default function ImageProcessing() {
 
     try {
       const response = await axios.post(
-        "https://ccfb-34-45-185-3.ngrok-free.app/predict",
+        "https://ef34-34-125-32-191.ngrok-free.app/predict",
         formData,
         {
           headers: {
@@ -134,12 +134,12 @@ export default function ImageProcessing() {
   return (
     <section className="bg-[#FFF5EC] py-12" id="process">
       <div className="container mx-auto flex flex-col items-center px-4">
-        <h2 className="text-3xl font-bold text-[#FE765E] mb-6 text-center">
+        <h2 className="text-3xl poppins-bold text-[#FE765E] mb-6 text-center">
           Silahkan Upload File Untuk Proses Data
         </h2>
         {/* Bagian kiri: Upload File */}
         <div className="w-full max-w-md bg-[#FE765E] p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-bold text-[#FFFFFF] mb-4">
+          <h2 className="text-2xl poppins-bold text-[#FFFFFF] mb-4">
             Upload Files
           </h2>
           <input
@@ -157,8 +157,10 @@ export default function ImageProcessing() {
         {uploadedFile && (
           <div className="w-full max-w-4xl bg-white p-6 rounded-lg shadow-lg mt-6">
             <div className="text-center mb-4">
-              <h2 className="text-3xl font-bold text-[#1E174C]">RESULT</h2>
-              <h3 className="text-2xl text-[#FE765E]">{predictedLabel}</h3>
+              <h2 className="text-3xl poppins-bold text-[#1E174C]">RESULT</h2>
+              <h3 className="text-2xl text-[#FE765E] poppins-bold">
+                {predictedLabel}
+              </h3>
             </div>
             <div className="flex flex-col md:flex-row items-center">
               <div className="w-full md:w-1/2">
@@ -170,15 +172,15 @@ export default function ImageProcessing() {
                 />
               </div>
               <div className="w-full md:w-1/2 p-4">
-                <div className="font-bold text-xl mb-2 text-center">
+                <div className="poppins-bold text-xl mb-2 text-center">
                   Ingredients
                 </div>
                 <p className="text-gray-700 text-base">{ingredients}</p>
-                <div className="font-bold text-xl mb-2 text-center mt-4">
+                <div className="poppins-bold text-xl mb-2 text-center mt-4">
                   Dampak Positif
                 </div>
                 <p className="text-gray-700 text-base">{positiveEffects}</p>
-                <div className="font-bold text-xl mb-2 text-center mt-4">
+                <div className="poppins-bold text-xl mb-2 text-center mt-4">
                   Dampak Negatif
                 </div>
                 <p className="text-gray-700 text-base">{negativeEffects}</p>
