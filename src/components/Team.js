@@ -25,7 +25,7 @@ function NextArrow(props) {
       className="absolute top-1/2 transform -translate-y-1/2 right-[400px] z-10 cursor-pointer align-center"
       onClick={onClick}
     >
-      <div className="bg-[#FE765E] text-white rounded-full p-2">
+      <div className="bg-[#1E174C] text-white rounded-full p-2">
         <span className="text-2xl">→</span>
       </div>
     </div>
@@ -39,7 +39,7 @@ function PrevArrow(props) {
       className="absolute top-1/2 transform -translate-y-1/2 left-[400px] z-10 cursor-pointer align-center"
       onClick={onClick}
     >
-      <div className="bg-[#FE765E] text-white rounded-full p-2">
+      <div className="bg-[#1E174C] text-white rounded-full p-2">
         <span className="text-2xl">←</span>
       </div>
     </div>
@@ -59,28 +59,28 @@ function TeamMember() {
   };
 
   return (
-    <section className="py-12 bg-[#FFF5EC]" id="biodata">
+    <section className="py-12 bg-[#FE765E]" id="biodata">
       <div className="container mx-auto px-4 relative">
-        <h2 className="text-3xl font-bold text-center text-[#1E174C] mb-6">
+        <h2 className="text-3xl poppins-extrabold text-center text-[#1E174C] mb-6">
           Our Team Members
         </h2>
         <div className="relative">
           <Slider {...settings}>
             {teamMembers.map((member, index) => (
               <div key={index} className="p-4">
-                <div className="max-w-md mx-auto bg-white p-6 rounded-3xl shadow-lg text-center">
+                <div className="max-w-md mx-auto bg-[#1E174C] p-6 rounded-3xl shadow-lg text-center">
                   <div className="relative -mt-2 mx-auto w-32 h-full">
                     <img
-                      className="w-full h-full rounded-3xl border-4 border-[#1E174C] mx-auto"
+                      className="w-full h-full rounded-3xl border-4 border-[#FE765E] mx-auto"
                       src={member.photo}
                       alt={member.name}
                     />
                   </div>
-                  <h3 className="text-xl poppins-extrabold text-[#1E174C] mt-4">
+                  <h3 className="text-xl poppins-extrabold text-[#FFFFFF] mt-4">
                     {member.name}
                   </h3>
                   <p className="text-[#FE765E] poppins-bold">{member.role}</p>
-                  <p className="text-gray-700">{member.description}</p>
+                  {/* <p className="text-gray-700">{member.description}</p> */}
                 </div>
               </div>
             ))}
