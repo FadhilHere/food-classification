@@ -102,7 +102,7 @@ export default function ImageProcessing() {
 
     try {
       const response = await axios.post(
-        "https://d7fb-34-106-251-30.ngrok-free.app/predict",
+        "https://d723-35-227-51-23.ngrok-free.app/predict",
         formData,
         {
           headers: {
@@ -173,25 +173,25 @@ export default function ImageProcessing() {
                 />
               </div>
               <div className="w-full md:w-1/2 p-4">
-                <div className="poppins-bold text-xl mb-2 text-center">
+                <div className="poppins-bold text-xl text-[#1E174C] mb-2 text-center">
                   Ingredients
                 </div>
                 <p className="text-[#FFFFFF] text-base poppins-medium">
                   {ingredients}
                 </p>
-                <div className="poppins-bold text-xl mb-2 text-center mt-4">
+                <div className="poppins-bold text-xl text-[#1E174C] mb-2 text-center mt-4">
                   Dampak Positif
                 </div>
                 <p className="text-[#FFFFFF] text-base poppins-medium">
                   {positiveEffects}
                 </p>
-                <div className="poppins-bold text-xl mb-2 text-center mt-4">
+                <div className="poppins-bold text-xl text-[#1E174C] mb-2 text-center mt-4">
                   Dampak Negatif
                 </div>
                 <p className="text-[#FFFFFF] text-base poppins-medium">
                   {negativeEffects}
                 </p>
-                <div className="poppins-bold text-xl mb-2 text-center mt-4">
+                <div className="poppins-bold text-xl text-[#1E174C] mb-2 text-center mt-4">
                   Akurasi
                 </div>
                 <p className="text-[#FFFFFF] text-base poppins-medium">

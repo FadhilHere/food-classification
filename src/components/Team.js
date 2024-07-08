@@ -7,13 +7,13 @@ const teamMembers = [
   {
     photo: member1,
     name: "Fadhil Parmata",
-    role: "Backend",
+    role: "Fullstack",
     description: "bjar bjir anjir.",
   },
   {
     photo: member2,
     name: "Indah Novitriani",
-    role: "Frontend",
+    role: "UI/UX Designer",
     description: "algren.",
   },
 ];

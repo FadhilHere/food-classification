@@ -25,7 +25,7 @@ export default function HeroSection() {
       <div className="max-w-xl mb-8 md:mb-0 text-left">
         <h1 className="text-6xl poppins-bold text-[#1E174C] leading-tight">
           Klasifikasi Jenis <br></br>
-          <span className="text-[#E20F0F]">Fast Food</span>
+          <span className="text-[#FE765E]">Fast Food</span>
         </h1>
         <p className="text-xl text-gray-600 my-6 leading-relaxed">
           Hidangan cepat saji lezat, burger, fried chicken, pizza, dan lainnya.

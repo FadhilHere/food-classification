@@ -50,7 +50,7 @@ export default function Header() {
               Tentang Kami
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="#arsitektur"
               onClick={(e) => handleScrollToSection(e, "arsitektur")}
@@ -58,7 +58,7 @@ export default function Header() {
             >
               Arsitektur
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="#biodata"
